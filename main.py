@@ -75,7 +75,7 @@ for i in tqdm(range(n_per_prompt)):
             }
         ],
         temperature=0,
-        top_p=1e-8
+        top_p=0
     )
 
     test_results.append(completion.choices[0].message.content)
